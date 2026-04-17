@@ -1,0 +1,13 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: prime-checker-job
+spec:
+  template:
+    spec:
+      containers:
+      - name: prime-app
+        # Replace 'your-username' with your actual Docker Hub ID
+        image: your-username/prime-app:latest
+        imagePullPolicy: Always
+      restartPolicy: Never
