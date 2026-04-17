@@ -7,7 +7,6 @@ spec:
     spec:
       containers:
       - name: prime-app
-        # Replace 'your-username' with your actual Docker Hub ID
-        image: your-username/prime-app:latest
+        image: your-docker-id/prime-app:latest
         imagePullPolicy: Always
       restartPolicy: Never
